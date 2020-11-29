@@ -32,10 +32,6 @@ def get_recommendations(title):
     return_df['Title'] = tit
     return_df['Vote_Count'] = dat
     return_df['Genres'] = vis
-    sns.set_style('dark')
-    plt.figure(figsize=(8, 6))
-    #plt.rcParams['patch.force_edgecolor'] = True
-    vis.hist(bins=10)
     return return_df
 
 
